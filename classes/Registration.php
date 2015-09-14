@@ -54,7 +54,10 @@ class Registration
             $this->errors[] = "Email cannot be longer than 64 characters";
         } elseif (!filter_var($_POST['user_email'], FILTER_VALIDATE_EMAIL)) {
             $this->errors[] = "Your email address is not in a valid email format";
+        } /*new elseif*/elseif (empty($_POST['user_phonenumber'])) {
+            $this->errors[] = "Phonenumber cannot be empty";
         } elseif (!empty($_POST['user_name'])
+            /*new line*/&& !empty($_POST['user_phonenumber'])
             && strlen($_POST['user_name']) <= 64
             && strlen($_POST['user_name']) >= 2
             && preg_match('/^[a-z\d]{2,64}$/i', $_POST['user_name'])
@@ -79,6 +82,7 @@ class Registration
                 // escaping, additionally removing everything that could be (html/javascript-) code
                 $user_name = $this->db_connection->real_escape_string(strip_tags($_POST['user_name'], ENT_QUOTES));
                 $user_email = $this->db_connection->real_escape_string(strip_tags($_POST['user_email'], ENT_QUOTES));
+                /*new code*/$user_phonenumber = $this->db_connection->real_escape_string(strip_tags($_POST['user_phonenumber'], ENT_QUOTES));
 
                 $user_password = $_POST['user_password_new'];
 
@@ -95,8 +99,9 @@ class Registration
                     $this->errors[] = "Sorry, that username / email address is already taken.";
                 } else {
                     // write new user's data into database
-                    $sql = "INSERT INTO users (user_name, user_password_hash, user_email)
-                            VALUES('" . $user_name . "', '" . $user_password_hash . "', '" . $user_email . "');";
+                    // NEW CODE is phonenumber-part
+                    $sql = "INSERT INTO users (user_name, user_phonenumber, user_password_hash, user_email)
+                            VALUES('" . $user_name . "', '" . $user_phonenumber . "', '" . $user_password_hash . "', '" . $user_email . "');";
                     $query_new_user_insert = $this->db_connection->query($sql);
 
                     // if user has been added successfully
