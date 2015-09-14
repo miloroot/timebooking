@@ -1,6 +1,19 @@
+// font to be used as 'logo/header'
+$thefont: 'Pacifico', sans-serif;
+
+.header {
+	@include span-columns(4);
+	@include shift(4);
+
+	font-family: $thefont;
+	text-align: center;
+	color: lightblue;
+}
+
 .login-area {
 	@include span-columns(4);
 	@include shift(4);
+
 	background-color: lightgray;
 	//width: 300px;
 	padding: 10px;

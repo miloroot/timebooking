@@ -15,6 +15,9 @@ if (isset($login)) {
 ?>
 
 <!-- login form box -->
+<div class="header">
+    <h1>Simplified Shiftbooking.</h1>
+</div>
 <div class="login-area">
     <form method="post" action="index.php" name="loginform">
 

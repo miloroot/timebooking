@@ -4,6 +4,18 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
+.header {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  margin-left: 34.11922%;
+  font-family: "Pacifico", sans-serif;
+  text-align: center;
+  color: lightblue; }
+  .header:last-child {
+    margin-right: 0; }
+
 .login-area {
   float: left;
   display: block;
@@ -26,6 +38,8 @@ html {
   height: 30px;
   margin-top: 10px; }
 
+@thefont : 'Pacifico', sans-serif;
+@normalfont : 'Arimo', sans-serif;
 .wrapper {
   max-width: 68em;
   margin-left: auto;
@@ -64,11 +78,13 @@ html {
   width: 74.41059%;
   margin-left: 8.5298%;
   background-color: lightblue;
+  padding: 10px;
   margin-top: 10px; }
   .main-content:last-child {
     margin-right: 0; }
 
 body {
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  font-family: 'Arimo', sans-serif; }
 
 /*# sourceMappingURL=style.css.map */

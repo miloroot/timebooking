@@ -1,3 +1,8 @@
+// font to be used as 'logo/header'
+@thefont: 'Pacifico', sans-serif;
+// font to be used everywhere else
+@normalfont: 'Arimo', sans-serif;
+
 .wrapper {
 	@include outer-container;
 }
@@ -5,6 +10,7 @@
 .top-content {
 	@include span-columns(9);
 	@include shift(1);
+
 	padding: 10px;
 	background-color: lightgray;
 }
@@ -23,5 +29,6 @@
 	@include shift(1);
 
 	background-color: lightblue;
+	padding: 10px;
 	margin-top: 10px;
 }
