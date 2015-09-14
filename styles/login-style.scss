@@ -8,6 +8,11 @@ $thefont: 'Pacifico', sans-serif;
 	font-family: $thefont;
 	text-align: center;
 	color: lightblue;
+
+	h1 {
+		font-size: 38px;
+		text-shadow: 2px 2px darkblue;
+	}
 }
 
 .login-area {

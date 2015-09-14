@@ -24,6 +24,12 @@ if (isset($registration)) {
     <br>
     <br>
 
+    <!-- the users phonenumber -->
+    <label for="login_input_phonenumber">User's phonenumber</label>
+    <input id="login_input_phonenumber" class="login_input" type="text" name="user_phonenumber" required />
+
+    <br>
+
     <!-- the email input field uses a HTML5 email type check -->
     <label for="login_input_email">User's email</label>
     <input id="login_input_email" class="login_input" type="email" name="user_email" required />

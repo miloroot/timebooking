@@ -15,6 +15,9 @@ html {
   color: lightblue; }
   .header:last-child {
     margin-right: 0; }
+  .header h1 {
+    font-size: 38px;
+    text-shadow: 2px 2px darkblue; }
 
 .login-area {
   float: left;
@@ -56,7 +59,8 @@ html {
   width: 74.41059%;
   margin-left: 8.5298%;
   padding: 10px;
-  background-color: lightgray; }
+  background-color: lightgray;
+  font-size: 14px; }
   .top-content:last-child {
     margin-right: 0; }
 
