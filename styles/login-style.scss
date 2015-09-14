@@ -1,0 +1,20 @@
+.login-area {
+	@include span-columns(4);
+	@include shift(4);
+	background-color: lightgray;
+	//width: 300px;
+	padding: 10px;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.login_input {
+	width: 200px;
+	height: 30px;
+}
+
+.btn {
+	width: 200px;
+	height: 30px;
+	margin-top: 10px;
+}

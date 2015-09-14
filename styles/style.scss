@@ -1,0 +1,12 @@
+@import "bourbon/bourbon";
+@import "neat/neat";
+
+// import styles for login
+@import "login-style";
+
+// import styles for after logging in, main-style
+@import "main-style";
+
+body {
+	background-color: #ffffff;
+}

@@ -1,0 +1,27 @@
+.wrapper {
+	@include outer-container;
+}
+
+.top-content {
+	@include span-columns(9);
+	@include shift(1);
+	padding: 10px;
+	background-color: lightgray;
+}
+
+.top-content-logout {
+	@include span-columns(1);
+
+	.logout-btn {
+		width: 78px;
+		height: 30px;
+	}
+}
+
+.main-content {
+	@include span-columns(9);
+	@include shift(1);
+
+	background-color: lightblue;
+	margin-top: 10px;
+}
