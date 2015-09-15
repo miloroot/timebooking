@@ -7,11 +7,11 @@ $thefont: 'Pacifico', sans-serif;
 
 	font-family: $thefont;
 	text-align: center;
-	color: lightblue;
+	color: #F09E9A;
 
 	h1 {
 		font-size: 38px;
-		text-shadow: 2px 2px darkblue;
+		text-shadow: 2px 2px #6792D1;
 	}
 }
 
@@ -19,7 +19,7 @@ $thefont: 'Pacifico', sans-serif;
 	@include span-columns(4);
 	@include shift(4);
 
-	background-color: lightgray;
+	background-color: #eaf4fd;
 	//width: 300px;
 	padding: 10px;
 	border-radius: 5px;
@@ -35,4 +35,7 @@ $thefont: 'Pacifico', sans-serif;
 	width: 200px;
 	height: 30px;
 	margin-top: 10px;
+	margin-right: 3px;
+	border: 1px solid gray;
+	background-color: #6792D1;
 }

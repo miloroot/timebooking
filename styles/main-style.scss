@@ -1,10 +1,22 @@
 // font to be used as 'logo/header'
-@thefont: 'Pacifico', sans-serif;
+$thefont: 'Pacifico', sans-serif;
 // font to be used everywhere else
-@normalfont: 'Arimo', sans-serif;
+$normalfont: 'Arimo', sans-serif;
+// bgcolor for 'boxes'
+$bgcolor: #eaf4fd;
+// bgcolor and bordercolor for logout button
+$logoutbutton: #F09E9A;
+$logoutbutton-border: #F09E9A;
+// bgcolor and bordercolor for submit button
+$submitbutton: #85D1D4;
+$submitbutton-border: #85D1D4;
 
 .wrapper {
 	@include outer-container;
+
+	h1 {
+		font-family: $thefont;
+	}
 }
 
 .top-content {
@@ -12,7 +24,7 @@
 	@include shift(1);
 
 	padding: 10px;
-	background-color: #f6f6f6;
+	background-color: $bgcolor;
 	font-size: 14px;
 }
 
@@ -22,6 +34,8 @@
 	.logout-btn {
 		width: 78px;
 		height: 30px;
+		background-color: $logoutbutton;
+		border: 1px solid $logoutbutton-border;
 	}
 }
 
@@ -29,9 +43,10 @@
 	@include span-columns(9);
 	@include shift(1);
 
-	background-color: #f6f6f6;
+	background-color: $bgcolor;
 	padding: 10px;
 	margin-top: 10px;
+	text-align: center;
 
 	option {
 		background-color: red;
@@ -59,6 +74,8 @@
 	.submit-btn {
 		width: 100px;
 		height: 30px;
+		background-color: $submitbutton;
+		border: 1px solid $submitbutton-border;
 	}
 
 	.saved-times {
