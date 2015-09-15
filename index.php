@@ -8,6 +8,7 @@
         <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
         <script src="js/main.js"></script>
 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         <link href='https://fonts.googleapis.com/css?family=Pacifico|Arimo' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="styles/style.css">
     </head>
